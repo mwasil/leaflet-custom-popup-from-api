@@ -1,28 +1,28 @@
-const MARKERS_API_FULL_URL = "/api/dla-dzieci.json" //musiałem pobrać lokalnie ze względu na CORP serwera API, docelowo można to zrobić dynamicznie
+const MARKERS_API_FULL_URL = "api/dla-dzieci.json" //musiałem pobrać lokalnie ze względu na CORP serwera API, docelowo można to zrobić dynamicznie
 
 const MARKERS_CATEGORIES = [{ //kategorie mogą być pobierane przez API, wówczas proponuję taką strukturę
     "cat_id": 1,
-    "cat_marker_url": "/img/pins/Sightseeing.png"
+    "cat_marker_url": "img/pins/Sightseeing.png"
   },
   {
     "cat_id": 2,
-    "cat_marker_url": "/img/pins/Walking.png"
+    "cat_marker_url": "img/pins/Walking.png"
   },
   {
     "cat_id": 3,
-    "cat_marker_url": "/img/pins/Skyline.png"
+    "cat_marker_url": "img/pins/Skyline.png"
   },
   {
     "cat_id": 4,
-    "cat_marker_url": "/img/pins/Single_hotel.png"
+    "cat_marker_url": "img/pins/Single_hotel.png"
   },
   {
     "cat_id": 5,
-    "cat_marker_url": "/img/pins/Museums.png"
+    "cat_marker_url": "img/pins/Museums.png"
   },
   {
     "cat_id": 6,
-    "cat_marker_url": "/img/pins/Eat_drink.png"
+    "cat_marker_url": "img/pins/Eat_drink.png"
   }
 ]
 
