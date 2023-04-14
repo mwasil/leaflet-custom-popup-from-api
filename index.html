@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="leaflet/leaflet.css" />
+  <link rel="stylesheet" href="https://beta2.kociewie.travel/static/website/css/style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="map"></div>
+  <script src="leaflet/leaflet.js"></script>
+  <script src="script.js"></script>
+  <template id="leaflet-popup-template">
+    <div class="infoBox"
+      style="position: absolute; visibility: visible; width: 305px; left: 10.3596px; bottom: -124.737px;">
+      <img src="img/close_infobox.png" align="right"
+        style=" position: relative; cursor: pointer; margin: 5px -20px 2px 2px;">
+      <div class="marker_info" id="marker_info"><img src="img/thumb_map_1.jpg" alt="Image">
+        <h3>Open Bus</h3><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+        <div class="marker_tools">
+          <form action="http://maps.google.com/maps" method="get" target="_blank"
+            style="display:inline-block" "=""><input name=" saddr" value="" type="hidden"><input type="hidden"
+              name="daddr" value="48.865633,2.321236"><button type="submit" value="Get directions"
+              class="btn_infobox_get_directions">Directions</button></form><a href="tel://+3934245255"
+            class="btn_infobox_phone">+3934245255</a>
+        </div><a href="single_tour.html" class="btn_infobox">Details</a>
+      </div>
+    </div>
+  </template>
+</body>
+
+</html>
