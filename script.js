@@ -51,14 +51,14 @@ let markerLayer = { // obiekt, który odpowiada za wszystkie operacje na warstwi
     const response = await fetch(this.markersApiUrl);
     const data = await response.json();
     this.markersJson = data;
-    console.log(this.markersJson);
+    // console.log(this.markersJson);
   },
 
   setUpMarkerIcons : function () { // konfiguruje tablicę z stylami markerów zależnie od kategorii
     let obj = this.markerIconsJson;
     t = this;
     Object.keys(obj).forEach(function (key) {
-      console.log(key, obj[key]); // TODO obsługa błędów w danych markerów
+      // console.log(key, obj[key]); // TODO obsługa błędów w danych markerów
       t.markerIcons[obj[key].cat_id] = L.icon({
         iconUrl: obj[key].cat_marker_url,
         iconSize: [60, 60],
@@ -72,7 +72,7 @@ let markerLayer = { // obiekt, który odpowiada za wszystkie operacje na warstwi
     t = this;
     Object.keys(obj).forEach(function (key) {
 
-      console.log(key, obj[key]); // TODO obsługa błędów w api
+      // console.log(key, obj[key]); // TODO obsługa błędów w api
       let lat = obj[key].object_lat;
       let lng = obj[key].object_lng;
       let name = obj[key].object_name;
