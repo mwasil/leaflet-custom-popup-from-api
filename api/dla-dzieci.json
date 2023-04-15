@@ -1,1 +1,56 @@
-[{"object_name": "Zamek Gniew", "object_id": 5, "object_lat": "53.83418285041438", "object_lng": "18.828123966371813", "object_url": "beta2.kociewie.travel/co_zobaczyc/i/5/zamek-gniew", "object_image": "beta2.kociewie.travel/media/cache/62/9f/629f4e437ca0a0b3cde6e67969de60ec.jpg", "object_info": "Zamek Gniew \u2013 warownia krzy\u017cacka ze \u015bredniowiecznym rodowodem, w kt\u00f3rej\u2026", "category_name": "Dla dzieci", "category_id": 1, "category_icon": "<i class=\"icon-github\"></i>"}, {"object_name": "Zagroda Kociewska", "object_id": 4, "object_lat": "53.970823340579976", "object_lng": "18.58650786638001", "object_url": "beta2.kociewie.travel/co_zobaczyc/i/4/zagroda-kociewska", "object_image": null, "object_info": "Zagroda Kociewska \u2013 Rodzinny Park Rozrywki w Godziszewie to miejsce,\u2026", "category_name": "Dla dzieci", "category_id": 1, "category_icon": "<i class=\"icon-github\"></i>"}, {"object_name": "Centrum Konserwacji Wrak\u00f3w Statk\u00f3w", "object_id": 3, "object_lat": "54.03916054459949", "object_lng": "18.852778086076015", "object_url": "beta2.kociewie.travel/co_zobaczyc/i/3/centrum-konserwacji-wrakow-statkow", "object_image": "beta2.kociewie.travel/media/cache/22/98/2298ddc638ca888e1513c3c5e85cb07c.jpg", "object_info": "Centrum Konserwacji Wrak\u00f3w Statk\u00f3w \u2013 oddzia\u0142 Narodowego Muzeum Morskiego w\u2026", "category_name": "Dla dzieci", "category_id": 1, "category_icon": "<i class=\"icon-github\"></i>"}, {"object_name": "Fabryka Sztuk w Tczewie", "object_id": 2, "object_lat": "54.084771395398576", "object_lng": "18.7938950092154", "object_url": "beta2.kociewie.travel/co_zobaczyc/i/2/fabryka-sztuk-w-tczewie", "object_image": "beta2.kociewie.travel/media/cache/76/18/76181c07456c5681e648f7c73f7eaeb4.jpg", "object_info": "Fabryka Sztuk w Tczewie \u2013 jednostka miejska, w kt\u00f3rej prezentowane\u2026", "category_name": "Dla dzieci", "category_id": 1, "category_icon": "<i class=\"icon-github\"></i>"}, {"object_name": "Grodzisko Owidz", "object_id": 1, "object_lat": "53.955081851385195", "object_lng": "18.571776567500386", "object_url": "beta2.kociewie.travel/co_zobaczyc/i/1/grodzisko-owidz", "object_image": "beta2.kociewie.travel/media/cache/f8/e3/f8e35cff51b92eb3cf07be186319c9ef.jpg", "object_info": "Grodzisko Owidz \u2013 miejsce, w kt\u00f3rym odnajdzie si\u0119 ka\u017cdy ma\u0142y\u2026", "category_name": "Dla dzieci", "category_id": 1, "category_icon": "<i class=\"icon-github\"></i>"}]
+[{
+    "object_name": "Zamek Gniew",
+    "object_id": 5,
+    "object_lat": "53.83418285041438",
+    "object_lng": "18.828123966371813",
+    "object_url": "beta2.kociewie.travel/co_zobaczyc/i/5/zamek-gniew",
+    "object_image": "beta2.kociewie.travel/media/cache/62/9f/629f4e437ca0a0b3cde6e67969de60ec.jpg",
+    "object_info": "Zamek Gniew \u2013 warownia krzy\u017cacka ze \u015bredniowiecznym rodowodem, w kt\u00f3rej\u2026",
+    "category_name": "Dla dzieci",
+    "category_id": 1,
+    "category_icon": "<i class=\"icon-github\"></i>"
+}, {
+    "object_name": "Zagroda Kociewska",
+    "object_id": 4,
+    "object_lat": "53.970823340579976",
+    "object_lng": "18.58650786638001",
+    "object_url": "beta2.kociewie.travel/co_zobaczyc/i/4/zagroda-kociewska",
+    "object_image": null,
+    "object_info": "Zagroda Kociewska \u2013 Rodzinny Park Rozrywki w Godziszewie to miejsce,\u2026",
+    "category_name": "Dla dzieci",
+    "category_id": 1,
+    "category_icon": "<i class=\"icon-github\"></i>"
+}, {
+    "object_name": "Centrum Konserwacji Wrak\u00f3w Statk\u00f3w",
+    "object_id": 3,
+    "object_lat": "54.03916054459949",
+    "object_lng": "18.852778086076015",
+    "object_url": "beta2.kociewie.travel/co_zobaczyc/i/3/centrum-konserwacji-wrakow-statkow",
+    "object_image": "beta2.kociewie.travel/media/cache/22/98/2298ddc638ca888e1513c3c5e85cb07c.jpg",
+    "object_info": "Centrum Konserwacji Wrak\u00f3w Statk\u00f3w \u2013 oddzia\u0142 Narodowego Muzeum Morskiego w\u2026",
+    "category_name": "Dla dzieci",
+    "category_id": 1,
+    "category_icon": "<i class=\"icon-github\"></i>"
+}, {
+    "object_name": "Fabryka Sztuk w Tczewie",
+    "object_id": 2,
+    "object_lat": "54.084771395398576",
+    "object_lng": "18.7938950092154",
+    "object_url": "beta2.kociewie.travel/co_zobaczyc/i/2/fabryka-sztuk-w-tczewie",
+    "object_image": "beta2.kociewie.travel/media/cache/76/18/76181c07456c5681e648f7c73f7eaeb4.jpg",
+    "object_info": "Fabryka Sztuk w Tczewie \u2013 jednostka miejska, w kt\u00f3rej prezentowane\u2026",
+    "category_name": "Dla dzieci",
+    "category_id": 1,
+    "category_icon": "<i class=\"icon-github\"></i>"
+}, {
+    "object_name": "Grodzisko Owidz",
+    "object_id": 1,
+    "object_lat": "53.955081851385195",
+    "object_lng": "18.571776567500386",
+    "object_url": "beta2.kociewie.travel/co_zobaczyc/i/1/grodzisko-owidz",
+    "object_image": "beta2.kociewie.travel/media/cache/f8/e3/f8e35cff51b92eb3cf07be186319c9ef.jpg",
+    "object_info": "Grodzisko Owidz \u2013 miejsce, w kt\u00f3rym odnajdzie si\u0119 ka\u017cdy ma\u0142y\u2026",
+    "category_name": "Dla dzieci",
+    "category_id": 1,
+    "category_icon": "<i class=\"icon-github\"></i>"
+}]
