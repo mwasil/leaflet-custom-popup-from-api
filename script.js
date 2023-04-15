@@ -1,3 +1,5 @@
+const PROTOCOL = "https://";
+
 const MARKERS_API_FULL_URL = "api/dla-dzieci.json" //musiałem pobrać lokalnie ze względu na CORP serwera API, docelowo można to zrobić dynamicznie
 
 const MARKERS_CATEGORIES = [{ //kategorie mogą być pobierane przez API, wówczas proponuję taką strukturę
@@ -79,21 +81,27 @@ let markerLayer = { // obiekt, który odpowiada za wszystkie operacje na warstwi
       let catName = obj[key].category_name;
       let catId = obj[key].category_id;
       let link = obj[key].object_url;
+      let img = obj[key].object_image;
       let marker_desc = obj[key].object_info;
-      t.makeMarker(lat, lng, name, catName, catId, link, marker_desc)
+      t.makeMarker(lat, lng, name, catName, catId, link, marker_desc, img)
 
     });
   },
 
-  makeMarker: function (lat, lng, name, catName, catId, link, marker_desc) { //tworzy pojedyncze markery i dodaje je do grupy
+  makeMarker: function (lat, lng, name, catName, catId, link, marker_desc, img) { //tworzy pojedyncze markery i dodaje je do grupy
     let t = this;
     let singleMarker = L.marker([lat, lng], {
       icon: t.markerIcons[catId],
       catName: catName
     });
-    let markerHtml = '<p class="leaflet-popup--header">' + name + '</p>';
+    let markerHtml = '';
+    if (img !== null ) {
+      markerHtml += '<img class="leaflet-popup--img" src="'+ PROTOCOL + img + '"><br>';  
+    }
+    markerHtml += '<p class="leaflet-popup--header">' + name + '</p>';
+
     markerHtml += '<span class="leaflet-popup--desc">'+ marker_desc + '</span><br>';
-    markerHtml += (link) ? '<p class="leaflet-popup--button"><a class="btn_infobox" target="_parent" href="https://' + link + '">Szczegóły</a></p>' : '';
+    markerHtml += (link) ? '<p class="leaflet-popup--button"><a class="btn_infobox" target="_parent" href="' + PROTOCOL + link + '">Szczegóły</a></p>' : '';
     singleMarker.bindPopup(markerHtml, {
       maxWidth: 200
     });
