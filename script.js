@@ -2,31 +2,7 @@ const PROTOCOL = "https://";
 
 const MARKERS_API_FULL_URL = "api/dla-dzieci.json" //musiałem pobrać lokalnie ze względu na CORP serwera API, docelowo można to zrobić dynamicznie
 
-const MARKERS_CATEGORIES = [{ //kategorie mogą być pobierane przez API, wówczas proponuję taką strukturę
-    "cat_id": 1,
-    "cat_marker_url": "img/pins/Sightseeing.png"
-  },
-  {
-    "cat_id": 2,
-    "cat_marker_url": "img/pins/Walking.png"
-  },
-  {
-    "cat_id": 3,
-    "cat_marker_url": "img/pins/Skyline.png"
-  },
-  {
-    "cat_id": 4,
-    "cat_marker_url": "img/pins/Single_hotel.png"
-  },
-  {
-    "cat_id": 5,
-    "cat_marker_url": "img/pins/Museums.png"
-  },
-  {
-    "cat_id": 6,
-    "cat_marker_url": "img/pins/Eat_drink.png"
-  }
-]
+const CATEGORIES_API_FULL_URL = "api/dla-dzieci-cat.json" // j/w
 
 const CURRENT_PLACE_LAT_LNG = [53.83418285041438, 18.828123966371813] // tablica ze współrzędnymi punktu, do którego mapa ma zostać przesunięta po wyświetleniu
 
@@ -41,7 +17,9 @@ let map = new L.Map('map', { // wstępna konfiguracja mapy c.d.
 let markerLayer = { // obiekt, który odpowiada za wszystkie operacje na warstwie markerów 
   markersApiUrl: MARKERS_API_FULL_URL,
 
-  markerIconsJson: MARKERS_CATEGORIES,
+  categoriesApiUrl: CATEGORIES_API_FULL_URL,
+
+  markerIconsJson: false,
 
   markersJson: false,
 
@@ -56,13 +34,20 @@ let markerLayer = { // obiekt, który odpowiada za wszystkie operacje na warstwi
     // console.log(this.markersJson);
   },
 
+  getCategories: async function () { // pobiera json z danymi kategorii
+    const response = await fetch(this.categoriesApiUrl);
+    const data = await response.json();
+    this.markerIconsJson = data;
+    //console.log(this.markerIconsJson);
+  },
+
   setUpMarkerIcons : function () { // konfiguruje tablicę z stylami markerów zależnie od kategorii
     let obj = this.markerIconsJson;
     t = this;
     Object.keys(obj).forEach(function (key) {
       // console.log(key, obj[key]); // TODO obsługa błędów w danych markerów
       t.markerIcons[obj[key].cat_id] = L.icon({
-        iconUrl: obj[key].cat_marker_url,
+        iconUrl: PROTOCOL + obj[key].cat_marker_url,
         iconSize: [60, 60],
         iconAnchor: [30,60]
       })
@@ -112,6 +97,7 @@ let markerLayer = { // obiekt, który odpowiada za wszystkie operacje na warstwi
 
 async function drawMarkerLayer() { // wykonanie wszystkich kroków składających mapę po kolei
   await markerLayer.getMarkers();
+  await markerLayer.getCategories();
   await markerLayer.setUpMarkerIcons();
   await markerLayer.makeLayer();
   await map.fitBounds(markerLayer.markers.getBounds());
